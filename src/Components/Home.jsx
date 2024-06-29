@@ -12,19 +12,19 @@ function Home() {
               E-Dietician
             </div>
             <div className="flex space-x-4">
-              <Link to="/prefence" className="text-black  hover:border-b-2">
+              <Link to="/prefence" className="text-black mr-2 uppercase font-bold  hover:text-blue-700">
                 Your Plan
               </Link>
-              <Link to="/BMI" className="text-black  hover:border-b-2">
+              <Link to="/BMI" className="text-black  uppercase font-bold mr-2 hover:text-blue-700">
                 BMI Calculator
               </Link>
-              <Link to="/allitem" className="text-black  hover:border-b-2">
+              <Link to="/allitem" className="text-black uppercase font-bold  mr-2 hover:text-blue-700">
                 All Recipes
               </Link>
-              <Link to="/profile" className="text-black  hover:border-b-2">
+              <Link to="/profile" className="text-black uppercase font-bold mr-2 hover:text-blue-700">
                 Profile
               </Link>
-              <Link to="/Login" className="text-black  hover:border-b-2">
+              <Link to="/Login" className="text-black uppercase font-bold mr-6 hover:text-blue-700">
                 Login/Register
               </Link>
             </div>

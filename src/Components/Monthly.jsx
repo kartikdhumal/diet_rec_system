@@ -331,7 +331,7 @@ const weeklyMealsData = {
       'Wednesday': 'Smoothie Bowl for breakfast, Veggie Wrap for lunch, Grilled Chicken for dinner',
     },
   },
- 
+
 };
 
 function Monthly() {
@@ -341,7 +341,7 @@ function Monthly() {
   const handleMonthChange = (event) => {
     const selectedMonth = event.target.value;
     setSelectedMonth(selectedMonth);
-    setSelectedWeek(null); 
+    setSelectedWeek(null);
   };
 
   const handleWeekSelect = (week) => {
@@ -374,9 +374,8 @@ function Monthly() {
           {weeks.map((week, index) => (
             <div
               key={index}
-              className={`bg-white p-6 rounded-xl shadow-xl cursor-pointer ${
-                selectedWeek === week ? 'border-2 border-blue-500' : ''
-              }`}
+              className={`bg-white p-6 rounded-xl shadow-xl cursor-pointer ${selectedWeek === week ? 'border-2 border-blue-500' : ''
+                }`}
               onClick={() => handleWeekSelect(week)}
             >
               <h3 className="text-xl font-bold mb-4">{selectedMonth} - {week}</h3>
