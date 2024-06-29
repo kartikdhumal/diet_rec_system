@@ -99,7 +99,8 @@ function Preference() {
                         <option value='Peanuts'>Dairy</option>
                         <option value='Dairy'>Eggs</option>
                         <option value='Gluten'>Fish</option>
-                        <option value='Gluten'>Peanuts</option>
+                        <option value='Peanuts'>Peanuts</option>
+                        <option value='None'>None</option>
                     </select>
                 </div>
                 <button

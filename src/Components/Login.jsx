@@ -9,7 +9,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-  const [loggingIn, setLoggingIn] = useState(false); 
+  const [loggingIn, setLoggingIn] = useState(false);
   const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
@@ -46,13 +46,13 @@ function Login() {
       const { data } = response;
 
       if (data.token) {
-        const { token, role , email , name , userid } = data;
+        const { token, role, email, name, userid } = data;
         sessionStorage.setItem('token', token);
         sessionStorage.setItem('email', email);
         sessionStorage.setItem('name', name);
         sessionStorage.setItem('userid', userid);
-        sessionStorage.setItem('role', role);        
-        if (role=="admin") {
+        sessionStorage.setItem('role', role);
+        if (role == "admin") {
           toast.success('Logged in as admin Successfully');
           navigate('/admin');
         } else {

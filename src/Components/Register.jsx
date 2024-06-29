@@ -47,22 +47,21 @@ function Register() {
 
       setLoading(true);
 
-      await axios.post('https://localhost:4000/api/register', {
-        name,
+      await axios.post('https://localhost:4000/user/register', {
         email,
         password,
-        role
+        userName: name
       });
-      toast.success('Registered Successfully');
+      alert('Registered Successfully');
       setName('');
       setEmail('');
       setPassword('');
       navigate('/');
     } catch (error) {
       if (error.response) {
-        toast.error(error.response.data.message);
+        alert(error.response.data.message);
       } else {
-        toast.error('Network error occurred. Please try again later.');
+        alert('Network error occurred. Please try again later.');
       }
       if (error.message.includes('Name')) {
         setNameError(error.message);
